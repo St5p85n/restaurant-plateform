@@ -22,7 +22,7 @@ services:
   service-commande:
     build: ./back
     ports:
-      - "9096:8889"
+      - "8081:8889"
     depends_on:
       - eureka-server
       - kafka
@@ -35,7 +35,7 @@ services:
   service-paiement:
     build: ./paiement
     ports:
-      - "9097:8889"
+      - "8082:8889"
     depends_on:
       - eureka-server
       - kafka
@@ -48,7 +48,7 @@ services:
   service-livraison:
     build: ./livraison
     ports:
-      - "9098:8889"
+      - "8083:8889"
     depends_on:
       - eureka-server
       - kafka
