@@ -329,7 +329,7 @@ export default function CheckoutPage() {
               </Card>
 
               <Button type="submit" className="w-full" disabled={loading || !!pendingOrderId}>
-                {loading ? 'Commande en cours...' : 'Passer la commande'}
+                {loading ? 'Commande en cours...' : 'Valider la commande'}
               </Button>
             </form>
           </div>

@@ -226,7 +226,7 @@ export default function ClientDashboardPage() {
           </div>
           <Button asChild size="lg">
             <Link to="/order/restaurants">
-              Commander maintenant
+              Passer Commande
             </Link>
           </Button>
         </CardContent>
@@ -260,7 +260,7 @@ export default function ClientDashboardPage() {
                   </p>
                   <Button asChild>
                     <Link to="/order/restaurants">
-                      Commander maintenant
+                      Passer Commande
                     </Link>
                   </Button>
                 </div>

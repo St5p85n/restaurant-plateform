@@ -168,7 +168,7 @@ export default function RegisterRestaurantPage() {
                       id="name"
                       value={formData.name}
                       onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                      placeholder="Ex: Le Petit Bistrot"
+                      placeholder="Ex: TerangaThiep"
                       required
                     />
                   </div>
@@ -179,7 +179,7 @@ export default function RegisterRestaurantPage() {
                       id="cuisine_type"
                       value={formData.cuisine_type}
                       onChange={(e) => setFormData({ ...formData, cuisine_type: e.target.value })}
-                      placeholder="Ex: Française, Italienne, Asiatique..."
+                      placeholder="Ex: Centrafricaine, Senegalaise, Ivoirienne..."
                     />
                   </div>
 
@@ -205,7 +205,7 @@ export default function RegisterRestaurantPage() {
                       id="address"
                       value={formData.address}
                       onChange={(e) => setFormData({ ...formData, address: e.target.value })}
-                      placeholder="Ex: 123 Rue de la Paix"
+                      placeholder="Ex: Station liberte 6"
                       required
                     />
                   </div>
@@ -217,7 +217,7 @@ export default function RegisterRestaurantPage() {
                         id="city"
                         value={formData.city}
                         onChange={(e) => setFormData({ ...formData, city: e.target.value })}
-                        placeholder="Ex: Paris"
+                        placeholder="Ex: Dakar"
                         required
                       />
                     </div>
@@ -228,7 +228,7 @@ export default function RegisterRestaurantPage() {
                         id="postal_code"
                         value={formData.postal_code}
                         onChange={(e) => setFormData({ ...formData, postal_code: e.target.value })}
-                        placeholder="Ex: 75001"
+                        placeholder="Ex: 13500"
                         required
                       />
                     </div>
@@ -246,7 +246,7 @@ export default function RegisterRestaurantPage() {
                       type="tel"
                       value={formData.phone}
                       onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                      placeholder="Ex: +33 1 23 45 67 89"
+                      placeholder="Ex: +221 77 783 67 89"
                       required
                     />
                   </div>

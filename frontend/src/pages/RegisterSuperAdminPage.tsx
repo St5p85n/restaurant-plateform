@@ -156,7 +156,7 @@ export default function RegisterSuperAdminPage() {
                   id="fullName"
                   name="fullName"
                   type="text"
-                  placeholder="Jean Dupont"
+                  placeholder="Diop Moussa"
                   value={formData.fullName}
                   onChange={handleChange}
                   disabled={loading}

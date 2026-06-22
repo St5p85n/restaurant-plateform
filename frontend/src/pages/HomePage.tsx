@@ -91,7 +91,7 @@ export default function HomePage() {
               <Button asChild size="lg" className="h-14 text-lg">
                 <Link to="/order/restaurants">
                   <ShoppingCart className="w-5 h-5 mr-2" />
-                  Commander maintenant
+                  Passer Commande 
                 </Link>
               </Button>
               <Button asChild variant="outline" size="lg" className="h-14 text-lg">

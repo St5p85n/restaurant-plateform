@@ -101,7 +101,7 @@ export default function RegisterClientPage() {
                 <Input
                   id="full_name"
                   type="text"
-                  placeholder="Jean Dupont"
+                  placeholder="Diop Moussa"
                   className="pl-10"
                   value={formData.full_name}
                   onChange={(e) => setFormData({ ...formData, full_name: e.target.value })}
@@ -120,7 +120,7 @@ export default function RegisterClientPage() {
                 <Input
                   id="email"
                   type="email"
-                  placeholder="jean.dupont@example.com"
+                  placeholder="diop.moussa@example.com"
                   className="pl-10"
                   value={formData.email}
                   onChange={(e) => setFormData({ ...formData, email: e.target.value })}
