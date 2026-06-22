@@ -1,0 +1,315 @@
+/* stylelint-disable */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Montserrat */
+@font-face {
+  font-family: 'Montserrat';
+  src: url('https://resource-static.bj.bcebos.com/fonts/Montserrat-VariableFont_wght.woff2') format('woff2');
+  font-display: swap;
+}
+
+/* RestauManager Design System - Minimal
+   Palette: Gris neutres, hiérarchie typographique, whitespace généreux
+   Philosophie: Airiness, clarté, contraste doux, police Montserrat
+*/
+
+@layer base {
+  :root {
+    --radius: 0.375rem;
+    
+    /* Couleurs principales - Orange énergique pour restaurants */
+    --primary: 24 95% 53%;
+    --primary-foreground: 0 0% 100%;
+    
+    /* Couleurs secondaires - Gris chaud pour support */
+    --secondary: 20 14% 92%;
+    --secondary-foreground: 24 10% 20%;
+    
+    /* Arrière-plans - Blanc pur pour clarté maximale */
+    --background: 0 0% 100%;
+    --foreground: 24 10% 10%;
+    
+    /* Cartes et surfaces - Légère élévation */
+    --card: 0 0% 100%;
+    --card-foreground: 24 10% 10%;
+    
+    /* Popovers et menus */
+    --popover: 0 0% 100%;
+    --popover-foreground: 24 10% 10%;
+    
+    /* Accent - Orange plus clair pour highlights */
+    --accent: 24 100% 97%;
+    --accent-foreground: 24 95% 53%;
+    
+    /* Muted - Gris très clair pour backgrounds subtils */
+    --muted: 20 20% 96%;
+    --muted-foreground: 24 5% 50%;
+    
+    /* Bordures - Gris très clair pour séparations douces */
+    --border: 20 15% 90%;
+    --input: 20 15% 90%;
+    --ring: 24 95% 53%;
+    
+    /* Destructive - Rouge pour actions critiques */
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+    
+    /* Success - Vert pour confirmations */
+    --success: 142 76% 36%;
+    --success-foreground: 0 0% 100%;
+    
+    /* Warning - Jaune pour alertes */
+    --warning: 38 92% 50%;
+    --warning-foreground: 0 0% 100%;
+    
+    /* Info - Bleu pour informations */
+    --info: 199 89% 48%;
+    --info-foreground: 0 0% 100%;
+    
+    /* Sidebar - Gris très clair pour navigation */
+    --sidebar-background: 20 20% 98%;
+    --sidebar-foreground: 24 10% 20%;
+    --sidebar-primary: 24 95% 53%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 24 100% 97%;
+    --sidebar-accent-foreground: 24 95% 53%;
+    --sidebar-border: 20 15% 92%;
+    --sidebar-ring: 24 95% 53%;
+    
+    /* Charts - Palette harmonieuse pour graphiques */
+    --chart-1: 24 95% 53%;
+    --chart-2: 142 76% 36%;
+    --chart-3: 199 89% 48%;
+    --chart-4: 271 81% 56%;
+    --chart-5: 38 92% 50%;
+  }
+
+  .dark {
+    /* Arrière-plans - Gris très foncé */
+    --background: 24 10% 8%;
+    --foreground: 0 0% 98%;
+    
+    /* Couleurs principales - Orange vif maintenu */
+    --primary: 24 95% 53%;
+    --primary-foreground: 0 0% 100%;
+    
+    /* Couleurs secondaires - Gris foncé */
+    --secondary: 24 8% 18%;
+    --secondary-foreground: 0 0% 98%;
+    
+    /* Cartes et surfaces */
+    --card: 24 10% 12%;
+    --card-foreground: 0 0% 98%;
+    
+    /* Popovers */
+    --popover: 24 10% 12%;
+    --popover-foreground: 0 0% 98%;
+    
+    /* Accent - Orange très foncé */
+    --accent: 24 30% 12%;
+    --accent-foreground: 24 95% 53%;
+    
+    /* Muted */
+    --muted: 24 8% 18%;
+    --muted-foreground: 24 5% 60%;
+    
+    /* Bordures */
+    --border: 24 8% 20%;
+    --input: 24 8% 20%;
+    --ring: 24 95% 53%;
+    
+    /* Destructive */
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 100%;
+    
+    /* Success */
+    --success: 142 70% 45%;
+    --success-foreground: 0 0% 100%;
+    
+    /* Warning */
+    --warning: 38 92% 50%;
+    --warning-foreground: 0 0% 100%;
+    
+    /* Info */
+    --info: 199 89% 48%;
+    --info-foreground: 0 0% 100%;
+    
+    /* Sidebar */
+    --sidebar-background: 24 10% 10%;
+    --sidebar-foreground: 0 0% 98%;
+    --sidebar-primary: 24 95% 53%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 24 30% 12%;
+    --sidebar-accent-foreground: 24 95% 53%;
+    --sidebar-border: 24 8% 18%;
+    --sidebar-ring: 24 95% 53%;
+    
+    /* Charts */
+    --chart-1: 24 95% 53%;
+    --chart-2: 142 70% 45%;
+    --chart-3: 199 89% 48%;
+    --chart-4: 271 81% 56%;
+    --chart-5: 38 92% 50%;
+  }
+
+  .dark-modern {
+    /* Arrière-plans - Noir profond avec teinte bleue moderne */
+    --background: 222 47% 6%;
+    --foreground: 210 40% 98%;
+    
+    /* Couleurs principales - Bleu électrique moderne */
+    --primary: 217 91% 60%;
+    --primary-foreground: 222 47% 11%;
+    
+    /* Couleurs secondaires - Gris bleuté */
+    --secondary: 217 33% 17%;
+    --secondary-foreground: 210 40% 98%;
+    
+    /* Cartes et surfaces - Gris très foncé avec teinte bleue */
+    --card: 222 47% 11%;
+    --card-foreground: 210 40% 98%;
+    
+    /* Popovers */
+    --popover: 222 47% 11%;
+    --popover-foreground: 210 40% 98%;
+    
+    /* Accent - Bleu foncé avec luminosité */
+    --accent: 217 33% 17%;
+    --accent-foreground: 217 91% 60%;
+    
+    /* Muted - Gris bleuté moyen */
+    --muted: 217 33% 17%;
+    --muted-foreground: 215 20% 65%;
+    
+    /* Bordures - Gris bleuté subtil */
+    --border: 217 33% 17%;
+    --input: 217 33% 17%;
+    --ring: 217 91% 60%;
+    
+    /* Destructive - Rouge moderne */
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 210 40% 98%;
+    
+    /* Success - Vert émeraude moderne */
+    --success: 160 84% 39%;
+    --success-foreground: 210 40% 98%;
+    
+    /* Warning - Ambre moderne */
+    --warning: 38 92% 50%;
+    --warning-foreground: 222 47% 11%;
+    
+    /* Info - Cyan moderne */
+    --info: 199 89% 48%;
+    --info-foreground: 210 40% 98%;
+    
+    /* Sidebar - Noir profond avec accent bleu */
+    --sidebar-background: 222 47% 8%;
+    --sidebar-foreground: 210 40% 98%;
+    --sidebar-primary: 217 91% 60%;
+    --sidebar-primary-foreground: 222 47% 11%;
+    --sidebar-accent: 217 33% 17%;
+    --sidebar-accent-foreground: 217 91% 60%;
+    --sidebar-border: 217 33% 17%;
+    --sidebar-ring: 217 91% 60%;
+    
+    /* Charts - Palette moderne et vibrante */
+    --chart-1: 217 91% 60%;
+    --chart-2: 160 84% 39%;
+    --chart-3: 199 89% 48%;
+    --chart-4: 271 81% 56%;
+    --chart-5: 38 92% 50%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-montserrat;
+    font-feature-settings: "rlig" 1, "calt" 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* Scrollbar minimale */
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: hsl(var(--border)) transparent;
+  }
+  *::-webkit-scrollbar {
+    width: 6px;
+    background: transparent;
+  }
+  *::-webkit-scrollbar-thumb {
+    background: hsl(var(--border));
+    border-radius: 3px;
+  }
+  
+  /* Typographie - Hiérarchie claire avec espacement généreux */
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-bold tracking-tight;
+  }
+  
+  h1 {
+    @apply text-4xl md:text-5xl;
+    letter-spacing: -0.02em;
+  }
+  
+  h2 {
+    @apply text-3xl md:text-4xl;
+    letter-spacing: -0.01em;
+  }
+  
+  h3 {
+    @apply text-2xl md:text-3xl;
+  }
+  
+  /* Scrollbar personnalisée - Minimal et discrète
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    @apply bg-muted;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    @apply bg-muted-foreground/30 rounded-full;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-muted-foreground/50;
+  } */
+}
+
+@layer utilities {
+  /* Gradient text pour titres accrocheurs */
+  .gradient-text {
+    background: linear-gradient(135deg, hsl(var(--primary)), hsl(38 92% 50%));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+  }
+  
+  /* Animations douces */
+  .animate-fade-in {
+    animation: fade-in 0.5s ease-out;
+  }
+  
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
