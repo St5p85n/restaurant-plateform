@@ -11,11 +11,11 @@ export default function HomePage() {
   const featuredRestaurants = [
     {
       id: '1',
-      name: 'Le Gourmet',
-      cuisine: 'Française',
+      name: 'Le Thiep',
+      cuisine: 'Senegalaise',
       rating: 4.8,
       reviews: 124,
-      address: 'Paris, France',
+      address: 'Dakar, Senegal',
       image: 'restaurant-1.jpg',
     },
     {
@@ -29,11 +29,11 @@ export default function HomePage() {
     },
     {
       id: '3',
-      name: 'La Trattoria',
-      cuisine: 'Italienne',
+      name: 'La manioc',
+      cuisine: 'Centrafricaine',
       rating: 4.9,
       reviews: 156,
-      address: 'Rome, Italie',
+      address: 'Bangui, Centrafrique',
       image: 'restaurant-3.jpg',
     },
   ];

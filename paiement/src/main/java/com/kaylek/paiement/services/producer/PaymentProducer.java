@@ -7,7 +7,7 @@ import com.kaylek.paiement.events.*;
 import com.kaylek.paiement.services.*;
 
 @Service
-public class PaymentConsumer {
+public class PaymentProducer {
 
 
     public final PaiementRepository paiementRepository;
