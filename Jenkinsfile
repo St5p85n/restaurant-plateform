@@ -2,14 +2,14 @@ pipeline {
     agent any
 
     environment {
-        DOCKER_REGISTRY = 'votre-dockerhub-username'
+        DOCKER_REGISTRY = 'resto-dockerhub-bg1'
         PROJECT_NAME = 'restaurant-platform'
     }
 
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'main', url: 'https://github.com/votre-repo/restaurant-platform.git'
+                git branch: 'main', url: 'https://github.com/St5p85n/restaurant-platform.git'
             }
         }
 

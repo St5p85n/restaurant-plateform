@@ -8,8 +8,6 @@ import com.kaylek.paiement.services.*;
 
 @Service
 public class PaymentProducer {
-
-
     public final PaiementRepository paiementRepository;
     @KafkaListener(topics = "order-created", groupId = "paiement-group-v4")
     public void consume(OrderEvent event) {
